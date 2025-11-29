@@ -12,6 +12,7 @@ const footerLinks = [
   { name: "Books", href: "#books" },
   { name: "Videos", href: "#videos" },
   { name: "Blog", href: "#blog" },
+  { name: "Support", href: "#support" },
   { name: "Contact", href: "#contact" },
 ];
 
