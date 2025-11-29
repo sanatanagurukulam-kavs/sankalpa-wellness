@@ -21,7 +21,6 @@ export function DonationsSection() {
 
         <div className="max-w-lg mx-auto">
           <div className="bg-card rounded-2xl p-8 shadow-elegant border border-border text-center">
-
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
               <Heart className="w-8 h-8 text-primary" />
             </div>
@@ -34,15 +33,14 @@ export function DonationsSection() {
               Use your phone's camera or payment app to scan the QR code below
             </p>
 
-            {/*  ✅ Your actual QR code inserted here  */}
+            {/*  ✅ Your actual QR code */}
             <div className="bg-white p-4 rounded-xl inline-block mb-6 shadow-sm">
               <img
-                src="/upi-qr-code.jpg.jpg"
+                src="/upi-qr-code.jpg"
                 alt="Sankalpa Vidya UPI QR Code"
                 className="w-48 h-48 rounded-lg border shadow-sm object-cover"
               />
             </div>
-
           </div>
         </div>
       </div>
