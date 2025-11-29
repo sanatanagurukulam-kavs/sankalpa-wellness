@@ -2,7 +2,7 @@ import { Youtube, Instagram, Facebook, Heart } from "lucide-react";
 
 const socialLinks = [
   { name: "YouTube", icon: Youtube, href: "https://youtube.com" },
-  { name: "Instagram", icon: Instagram, href: "https://instagram.com" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/sankalpavidya?igsh=MWxsZ2h6bnVoNm9rNw%3D%3D" },
   { name: "Facebook", icon: Facebook, href: "https://facebook.com" },
 ];
 
