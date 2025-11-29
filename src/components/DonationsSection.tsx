@@ -1,8 +1,6 @@
 import { Heart, QrCode } from "lucide-react";
-
 export function DonationsSection() {
-  return (
-    <section id="support" className="section-padding bg-gradient-subtle">
+  return <section id="support" className="section-padding bg-gradient-subtle">
       <div className="container-width">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
@@ -36,9 +34,7 @@ export function DonationsSection() {
               <div className="w-48 h-48 bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30">
                 <div className="text-center">
                   <QrCode className="w-12 h-12 text-primary/50 mx-auto mb-2" />
-                  <p className="text-xs text-muted-foreground">
-                    Replace with<br />your QR code
-                  </p>
+                  
                 </div>
               </div>
               {/* 
@@ -50,17 +46,12 @@ export function DonationsSection() {
                   alt="Payment QR Code" 
                   className="w-48 h-48"
                 />
-              */}
+               */}
             </div>
 
-            <p className="text-sm text-muted-foreground">
-              Every contribution, big or small, makes a difference. 
-              <br />
-              <span className="text-primary font-medium">Thank you for your support!</span>
-            </p>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
