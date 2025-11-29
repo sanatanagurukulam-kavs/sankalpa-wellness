@@ -57,7 +57,7 @@ export function AboutSection() {
               </div>
               <div>
                 <p className="font-display text-3xl text-primary font-semibold">5</p>
-                <p className="text-sm text-muted-foreground">Books Published</p>
+                <p className="text-sm text-muted-foreground">​2</p>
               </div>
             </div>
           </div>
