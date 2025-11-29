@@ -1,6 +1,5 @@
 export function AboutSection() {
-  return (
-    <section id="about" className="section-padding bg-ivory">
+  return <section id="about" className="section-padding bg-ivory">
       <div className="container-width">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Placeholder */}
@@ -49,7 +48,7 @@ export function AboutSection() {
 
             <div className="mt-8 flex flex-wrap gap-8">
               <div>
-                <p className="font-display text-3xl text-primary font-semibold">20+</p>
+                <p className="font-display text-3xl text-primary font-semibold">25+</p>
                 <p className="text-sm text-muted-foreground">Years Teaching</p>
               </div>
               <div>
@@ -64,6 +63,5 @@ export function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
