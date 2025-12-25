@@ -1,30 +1,15 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import scubaDiveBook1 from "@/assets/scuba-dive-book-1.png";
 
 const books = [
   {
     id: 1,
-    title: "The Path of Sankalpa",
-    subtitle: "Awakening Your True Intention",
-    description: "Discover the ancient practice of setting sacred intentions and transform your spiritual journey.",
-    amazonLink: "#",
-    imageColor: "from-primary/20 to-gold-light/30",
-  },
-  {
-    id: 2,
-    title: "Mindful Living",
-    subtitle: "A Guide to Daily Wellness",
-    description: "Practical wisdom for incorporating mindfulness into every aspect of your daily life.",
-    amazonLink: "#",
-    imageColor: "from-gold-light/30 to-primary/10",
-  },
-  {
-    id: 3,
-    title: "Sacred Breath",
-    subtitle: "The Art of Pranayama",
-    description: "Master the ancient breathing techniques that unlock vitality and inner peace.",
-    amazonLink: "#",
-    imageColor: "from-primary/15 to-gold-light/25",
+    title: "SCUBA DIVE: Beyond the Mind",
+    subtitle: "Book I - Vedanta for Children",
+    description: "A knowledge series with stories by Arthi Krishna. Cover & illustrations by Parvathi Ramesh.",
+    amazonLink: "#", // Replace with actual shop link
+    image: scubaDiveBook1,
   },
 ];
 
@@ -52,17 +37,13 @@ export function BooksSection() {
               key={book.id} 
               className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-gold transition-all duration-300"
             >
-              {/* Book Cover Placeholder */}
-              <div className={`aspect-[3/4] bg-gradient-to-br ${book.imageColor} relative overflow-hidden`}>
-                <div className="absolute inset-0 flex items-center justify-center p-6">
-                  <div className="text-center">
-                    <div className="w-20 h-1 bg-primary/40 mx-auto mb-4" />
-                    <p className="font-display text-lg text-foreground/80 mb-2">{book.title}</p>
-                    <p className="text-sm text-muted-foreground">{book.subtitle}</p>
-                    <div className="w-20 h-1 bg-primary/40 mx-auto mt-4" />
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-300" />
+              {/* Book Cover */}
+              <div className="aspect-[3/4] relative overflow-hidden bg-muted">
+                <img 
+                  src={book.image} 
+                  alt={`${book.title} book cover`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
 
               {/* Book Info */}
