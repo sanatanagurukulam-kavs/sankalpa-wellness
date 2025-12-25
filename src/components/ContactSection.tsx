@@ -121,13 +121,13 @@ export function ContactSection() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
-                <div>
+              <div>
                   <p className="font-medium text-foreground mb-1">Email</p>
                   <a 
-                    href="mailto:hello@sankalpavidya.com" 
+                    href="mailto:arthikrish@gmail.com" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@sankalpavidya.com
+                    arthikrish@gmail.com
                   </a>
                 </div>
               </div>
@@ -136,13 +136,13 @@ export function ContactSection() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <div>
+              <div>
                   <p className="font-medium text-foreground mb-1">Phone</p>
                   <a 
-                    href="tel:+1234567890" 
+                    href="tel:+919901518173" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (234) 567-890
+                    +91 99015 18173
                   </a>
                 </div>
               </div>
@@ -151,10 +151,10 @@ export function ContactSection() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <div>
+              <div>
                   <p className="font-medium text-foreground mb-1">Location</p>
                   <p className="text-muted-foreground">
-                    Available for retreats and workshops worldwide
+                    Online and Offline
                   </p>
                 </div>
               </div>
