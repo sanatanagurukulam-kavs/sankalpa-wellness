@@ -8,7 +8,7 @@ const books = [
     title: "SCUBA DIVE: Beyond the Mind",
     subtitle: "Book I - Vedanta for Children",
     description: "A knowledge series with stories by Arthi Krishna. Cover & illustrations by Parvathi Ramesh.",
-    amazonLink: "#", // Replace with actual shop link
+    shopLink: "https://store.whitefalconpublishing.com/collections/latest-books/products/scuba-dive-beyond-the-mind-book-i-vedanta-for-children-a-knowledge-series-with-stories",
     image: scubaDiveBook1,
   },
 ];
@@ -60,8 +60,8 @@ export function BooksSection() {
                   className="w-full"
                   asChild
                 >
-                  <a href={book.amazonLink} target="_blank" rel="noopener noreferrer">
-                    View on Amazon
+                  <a href={book.shopLink} target="_blank" rel="noopener noreferrer">
+                    Buy Now
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
