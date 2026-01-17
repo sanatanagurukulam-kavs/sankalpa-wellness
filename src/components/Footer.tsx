@@ -1,17 +1,17 @@
 import { Youtube, Instagram, Facebook, Heart } from "lucide-react";
 
 const socialLinks = [
-  { name: "YouTube", icon: Youtube, href: "https://youtube.com" },
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/sankalpavidya?igsh=MWxsZ2h6bnVoNm9rNw%3D%3D" },
-  { name: "Facebook", icon: Facebook, href: "https://facebook.com" },
+  { name: "YouTube", icon: Youtube, href: "https://youtube.com/@Sankalpavidya" },
+  { name: "Instagram", icon: Instagram, href: "https://instagram.com/Sankalpavidya" },
+  { name: "Facebook", icon: Facebook, href: "https://facebook.com/Sankalpavidya" },
 ];
 
 const footerLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
+  { name: "Programs", href: "#programs" },
   { name: "Books", href: "#books" },
-  { name: "Videos", href: "#videos" },
-  { name: "Blog", href: "#blog" },
+  { name: "FAQs", href: "#faqs" },
   { name: "Support", href: "#support" },
   { name: "Contact", href: "#contact" },
 ];
