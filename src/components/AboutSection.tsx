@@ -1,4 +1,4 @@
-import { Check, X, Sparkles } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 
 export function AboutSection() {
   const forYouItems = [
@@ -6,13 +6,6 @@ export function AboutSection() {
     "You would like to notice and work with your own emotions and reactions",
     "You prefer understanding and growth over quick fixes",
     "You see parenting as a journey of growth—for you and your child",
-  ];
-
-  const notForYouItems = [
-    "You're looking for instant behaviour correction",
-    "You want prescriptive rules without reflection",
-    "You think parenting is mainly about results",
-    "You're not ready to explore your inner world yet",
   ];
 
   return (
@@ -49,9 +42,8 @@ export function AboutSection() {
           </div>
         </div>
 
-        {/* For You / Not For You Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {/* For You */}
+        {/* For You Section Only */}
+        <div className="max-w-2xl mx-auto">
           <div className="bg-card rounded-2xl p-8 shadow-card border border-primary/10">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -66,28 +58,6 @@ export function AboutSection() {
                 <li key={index} className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-4 h-4 text-green-600" />
-                  </div>
-                  <span className="text-muted-foreground">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Not For You */}
-          <div className="bg-card rounded-2xl p-8 shadow-card border border-muted/20">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-muted/20 flex items-center justify-center">
-                <X className="w-6 h-6 text-muted-foreground" />
-              </div>
-              <h3 className="font-display text-2xl font-semibold text-foreground">
-                This May Not Be For You If…
-              </h3>
-            </div>
-            <ul className="space-y-4">
-              {notForYouItems.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-muted/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <X className="w-4 h-4 text-muted-foreground" />
                   </div>
                   <span className="text-muted-foreground">{item}</span>
                 </li>
