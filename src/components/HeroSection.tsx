@@ -24,7 +24,7 @@ export function HeroSection() {
       <div className="container-width text-center px-4 relative z-10">
         <div className="animate-fade-up">
           <p className="text-primary font-medium tracking-[0.3em] uppercase text-sm mb-6">
-            Journey Within
+            For Conscious Vedantic Parenting
           </p>
         </div>
         
@@ -34,17 +34,34 @@ export function HeroSection() {
         
         <div className="gold-divider mb-8 animate-fade-up delay-200" />
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up delay-300 font-light leading-relaxed">
-          Discover the ancient wisdom of intention and consciousness. 
-          Transform your life through spiritual practices, mindful living, and inner peace.
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 animate-fade-up delay-300 font-light leading-relaxed">
+          In a world of pressure, comparison, screens, and uncertainty, children need more than answers.
         </p>
+
+        <div className="max-w-2xl mx-auto mb-8 animate-fade-up delay-350">
+          <p className="text-base md:text-lg text-foreground/80 mb-4">They need adults who can remain:</p>
+          <ul className="text-muted-foreground space-y-2 text-left inline-block">
+            <li className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-primary"></span>
+              Calm and clear without control
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-primary"></span>
+              Present without pressure
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-primary"></span>
+              Steady during emotional storms
+            </li>
+          </ul>
+        </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
-          <Button variant="gold" size="lg" onClick={scrollToAbout}>
-            Begin Your Journey
+          <Button variant="gold" size="lg" onClick={() => document.querySelector("#programs")?.scrollIntoView({ behavior: "smooth" })}>
+            Explore Programs
           </Button>
-          <Button variant="gold-outline" size="lg" onClick={() => document.querySelector("#books")?.scrollIntoView({ behavior: "smooth" })}>
-            Explore Books
+          <Button variant="gold-outline" size="lg" onClick={scrollToAbout}>
+            Begin Your Journey
           </Button>
         </div>
 

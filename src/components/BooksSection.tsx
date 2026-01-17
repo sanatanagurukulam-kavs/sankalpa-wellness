@@ -5,11 +5,19 @@ import scubaDiveBook1 from "@/assets/scuba-dive-book-1.png";
 const books = [
   {
     id: 1,
-    title: "SCUBA DIVE: Beyond the Mind",
-    subtitle: "Book I - Vedanta for Children",
-    description: "A knowledge series with stories by Arthi Krishna. Cover & illustrations by Parvathi Ramesh.",
+    title: "SCUBA Dive – Beyond the Mind",
+    subtitle: "Book I",
+    description: "A practical guide to understanding your inner world and navigating life with clarity and confidence.",
     shopLink: "https://store.whitefalconpublishing.com/collections/latest-books/products/scuba-dive-beyond-the-mind-book-i-vedanta-for-children-a-knowledge-series-with-stories",
     image: scubaDiveBook1,
+  },
+  {
+    id: 2,
+    title: "SCUBA Dive – Where Roots Meet the Sky",
+    subtitle: "Book II",
+    description: "A journey into \"Where I am\"—understanding your inner operating space and connecting with your deeper purpose.",
+    shopLink: "https://store.whitefalconpublishing.com/collections/latest-books",
+    image: null, // Placeholder for second book
   },
 ];
 
@@ -22,16 +30,16 @@ export function BooksSection() {
             Published Works
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
-            Books & Teachings
+            Books by Arthi Krishna
           </h2>
           <div className="gold-divider mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Explore the collection of books designed to guide you on your spiritual journey 
-            and help you cultivate a life of purpose and inner peace.
+            and help you navigate life with clarity and inner peace.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {books.map((book) => (
             <article 
               key={book.id} 
@@ -39,19 +47,31 @@ export function BooksSection() {
             >
               {/* Book Cover */}
               <div className="aspect-[3/4] relative overflow-hidden bg-muted">
-                <img 
-                  src={book.image} 
-                  alt={`${book.title} book cover`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                {book.image ? (
+                  <img 
+                    src={book.image} 
+                    alt={`${book.title} book cover`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                    <div className="text-center p-6">
+                      <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
+                        <span className="font-display text-2xl text-primary">II</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground">Coming Soon</p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Book Info */}
               <div className="p-6">
+                <p className="text-sm text-primary font-medium mb-1">{book.subtitle}</p>
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                   {book.title}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+                <p className="text-sm text-muted-foreground mb-4">
                   {book.description}
                 </p>
                 <Button 
@@ -61,7 +81,7 @@ export function BooksSection() {
                   asChild
                 >
                   <a href={book.shopLink} target="_blank" rel="noopener noreferrer">
-                    Buy Now
+                    {book.image ? "Buy Now" : "View Books"}
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
