@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import garbhavidyaImg from "@/assets/garbhavidya.jpg";
 import parentingImg from "@/assets/parenting.jpg";
 import bhagavadgitaImg from "@/assets/bhagavadgitaforyouth.jpg";
@@ -9,45 +10,50 @@ const courses = [
     image: garbhavidyaImg,
     title: "Garbha Vidya",
     subtitle: "Conscious Preparation for Pre-Conception & Pregnancy",
+    path: "/courses/garbha-vidya",
   },
   {
     id: "conscious-parenting",
     image: parentingImg,
     title: "Conscious Parenting",
     subtitle: "Weekend Online Course – Begin Gently",
+    path: "/courses/conscious-parenting",
   },
   {
     id: "art-of-parenting",
     image: parentingImg,
     title: "Art of Parenting",
     subtitle: "A Deeper Journey",
+    path: "/courses/art-of-parenting",
   },
   {
     id: "anvaya-retreat",
     image: forallImg,
     title: "Anvaya",
     subtitle: "Weekend Parent-Child Retreat",
+    path: "/courses/anvaya-retreat",
   },
   {
     id: "gita-for-youth",
     image: bhagavadgitaImg,
     title: "Bhagavad Gita for Youth",
     subtitle: "Navigate stress, build resilience, and face life with clarity",
+    path: "/courses/gita-for-youth",
   },
   {
     id: "study-sessions",
     image: forallImg,
     title: "Open Study Sessions",
     subtitle: "For All Ages",
+    path: "/courses/study-sessions",
   },
 ];
 
 export function ProgramsSection() {
-  const handleCourseClick = (courseId: string) => {
-    const contactSection = document.querySelector("#contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
+  const navigate = useNavigate();
+
+  const handleCourseClick = (path: string) => {
+    navigate(path);
   };
 
   return (
@@ -71,7 +77,7 @@ export function ProgramsSection() {
           {courses.map((course) => (
             <button
               key={course.id}
-              onClick={() => handleCourseClick(course.id)}
+              onClick={() => handleCourseClick(course.path)}
               className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-gold transition-all duration-300 border border-border text-left cursor-pointer"
             >
               <div className="aspect-[4/3] overflow-hidden">
