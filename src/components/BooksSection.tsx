@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import scubaDiveBook1 from "@/assets/scuba-dive-book-1.png";
+import scubaDiveBook2 from "@/assets/scuba-dive-book-2.jpg";
 
 const books = [
   {
@@ -17,7 +18,7 @@ const books = [
     subtitle: "Book II",
     description: "A journey into \"Where I am\"—understanding your inner operating space and connecting with your deeper purpose.",
     shopLink: "https://store.whitefalconpublishing.com/collections/latest-books",
-    image: null, // Placeholder for second book
+    image: scubaDiveBook2,
   },
 ];
 
@@ -47,22 +48,11 @@ export function BooksSection() {
             >
               {/* Book Cover */}
               <div className="aspect-[3/4] relative overflow-hidden bg-muted">
-                {book.image ? (
-                  <img 
-                    src={book.image} 
-                    alt={`${book.title} book cover`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                        <span className="font-display text-2xl text-primary">II</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground">Coming Soon</p>
-                    </div>
-                  </div>
-                )}
+                <img 
+                  src={book.image} 
+                  alt={`${book.title} book cover`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
 
               {/* Book Info */}
@@ -81,7 +71,7 @@ export function BooksSection() {
                   asChild
                 >
                   <a href={book.shopLink} target="_blank" rel="noopener noreferrer">
-                    {book.image ? "Buy Now" : "View Books"}
+                    Buy Now
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </a>
                 </Button>

@@ -1,19 +1,18 @@
+import facilitatorImg from "@/assets/facilitator.jpg";
+
 export function FacilitatorSection() {
   return (
     <section id="facilitator" className="section-padding bg-ivory">
       <div className="container-width">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image Placeholder */}
+          {/* Facilitator Image */}
           <div className="relative">
             <div className="aspect-[4/5] bg-secondary rounded-lg overflow-hidden shadow-card">
-              <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                    <span className="font-display text-4xl text-primary">AK</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">Facilitator Photo</p>
-                </div>
-              </div>
+              <img 
+                src={facilitatorImg} 
+                alt="Arthi Krishna - Vedantic Life Coach" 
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Decorative Frame */}
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/30 rounded-lg -z-10" />
