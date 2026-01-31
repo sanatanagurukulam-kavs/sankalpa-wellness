@@ -17,7 +17,7 @@ const books = [
     title: "SCUBA Dive – Where Roots Meet the Sky",
     subtitle: "Book II",
     description: "A journey into \"Where I am\"—understanding your inner operating space and connecting with your deeper purpose.",
-    shopLink: "https://store.whitefalconpublishing.com/collections/latest-books",
+    shopLink: "https://www.ziffybees.com/product/scuba-dive/",
     image: scubaDiveBook2,
   },
 ];
