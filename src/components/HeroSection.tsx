@@ -34,8 +34,8 @@ export function HeroSection() {
         
         <div className="gold-divider mb-8 animate-fade-up delay-200" />
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 animate-fade-up delay-300 font-light leading-relaxed">
-          In a world of pressure, comparison, screens, and uncertainty, children need more than answers.
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 animate-fade-up delay-300 leading-relaxed">
+          <span className="font-semibold text-foreground">In a world of pressure, comparison, screens, and uncertainty, children need more than answers.</span>
         </p>
 
         <div className="max-w-2xl mx-auto mb-8 animate-fade-up delay-350">
